@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class App {
     static boolean correct = false;
+    GuessNumber guessNumber = new GuessNumber();
     public static void main(String[] args) throws Exception{
         while(!correct){
             if (JOptionPane.showConfirmDialog(null, "Are whales fish?", "True or False Question",
@@ -12,5 +13,6 @@ public class App {
                 correct = true;
             }
         }
+        GuessNumber.main(null);
     }
 }
